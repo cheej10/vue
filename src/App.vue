@@ -27,4 +27,7 @@ export default {
 * {
   text-align: center;
 }
+li {
+  list-style: none;
+}
 </style>

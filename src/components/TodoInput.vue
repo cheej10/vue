@@ -1,7 +1,7 @@
 <template>
   <div>
     <form class="form">
-    <input type="text" v-model="newTodoItem" v-on:keyup.enter="addTodo">
+    <input type="text" autofocus v-model="newTodoItem" v-on:keyup.enter="addTodo">
     <button class="addBtn" v-on:click="addTodo">add</button>
     </form>
   </div>
@@ -31,13 +31,12 @@ export default {
 <style>
 .form {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
-  margin: 40px;
+  margin: 40px 100px;
   height: 50px;
   line-height: 50px;
 }
 input {
   height: 25px;
-  width: 400px;
   border: 0;
   outline: 0;
 }
